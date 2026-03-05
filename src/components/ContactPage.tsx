@@ -53,7 +53,7 @@ export default function ContactPage() {
 
         <section className="contact-container">
           <div className="contact-info-panel">
-            <h2>Get in touch</h2>
+            <h2>Let’s Connect</h2>
 
             <div className="info-block">
               <div className="info-row">
