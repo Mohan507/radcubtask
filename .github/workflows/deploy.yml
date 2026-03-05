@@ -1,4 +1,4 @@
-name: Netlify CI/CD Deployment
+# name: Netlify CI/CD Deployment
 
 on:
   push:
@@ -20,6 +20,9 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+
+      - name: Run Tests
+        run: npm run test -- --run
 
       - name: Build Project
         run: npm run build
