@@ -1,42 +1,33 @@
 # Contact Us & Admin Dashboard
----------------------------------
+
+---
 
 A modern Contact Us page and Admin Dashboard built using React, TypeScript, and Vite.
 This project focuses on clean UI design, smooth animations, form validation, and responsive layout without relying on heavy UI libraries.
-----------------------------------------------------------------
+
+---
+
 # Live Demo: https://contactadmindashboardpage.netlify.app/
 
 # GitHub Repository: https://github.com/Mohan507/radcubtask.git
-------------------------------------------------------------------
+
+---
+
 # Tech Stack
 
 React
-
-
 TypeScript
-
 Vite
-
 React Hook Form
-
 Pure CSS (No UI frameworks)
-
+Framer Motion for animations
 Netlify for deployment
 
-Optional tools (if implemented):
+## Jest + React Testing Library
 
-Framer Motion for animations
-
-Redux Toolkit for state management
-
-React Query
-
-Jest + React Testing Library
-----------------------------------------------
 # Features
-
-# Contact Us Page
-# Admin Dashboard
+Contact Us Page
+Admin Dashboard
 
 Fully custom layout inspired by the visual style of radcube.com
 
@@ -85,13 +76,15 @@ A 20% random failure simulation is included to demonstrate error handling
 Example submission object:
 
 {
-  name: "John Doe",
-  email: "john@example.com",
-  subject: "Project Inquiry",
-  message: "I would like to discuss a collaboration.",
-  timestamp: "2026-03-05T12:30:00"
+name: "John Doe",
+email: "john@example.com",
+subject: "Project Inquiry",
+message: "I would like to discuss a collaboration.",
+timestamp: "2026-03-05T12:30:00"
 }
-----------------------------------------------------------------
+
+---
+
 # Admin Dashboard Page
 
 The Admin Dashboard displays all contact form submissions.
@@ -130,37 +123,40 @@ No submissions yet. Once users submit the contact form, they will appear here.
 
 Sort by name or date
 
-Staggered fade-in animation for rows
--------------------------------------------------------------------------
+## Staggered fade-in animation for rows
+
 # Project Structure
+
 src
-  components
-    ContactForm
-    Toast
-    Modal
-    DashboardTable
+components
+AdminDashboard.tsx
+ContactForm.tsx
+ContactPage.tsx
+Contactus.tsx
 
-  pages
-    ContactPage
-    AdminDashboard
+styles
+Contactanother.css
+Contactus.css
+dashboard.css
 
-  hooks
-    useMockApi.ts
+tests
+ContactForm.test.tsx
+ContactPage.test.tsx
+setup.ts
 
-  styles
-    global.css
+utils
+mockApi.ts
 
-  types
-    submission.ts
+App.tsx
+main.tsx
 
-  App.tsx
-  main.tsx
------------------------------------------------------------
+---
+
 # Installation & Setup
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/your-repo-name.git
+git clonehttps://github.com/Mohan507/radcubtask.git
 
 2. Navigate into the project folder
 
@@ -174,9 +170,13 @@ npm install
 
 npm run dev
 
+5. To test the development code
+
+npm run test
+
 The application will run at:
 
-# http://localhost:5173
+# http://localhost:5173 #this is react+vite
 
 # Build for Production
 
@@ -186,8 +186,8 @@ npm run build
 
 To preview the production build:
 
-npm run preview
-----------------------------------------------------
+## npm run preview
+
 # Deployment
 
 This project is deployed using Netlify.
