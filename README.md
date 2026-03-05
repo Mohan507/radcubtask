@@ -4,13 +4,14 @@
 A modern Contact Us page and Admin Dashboard built using React, TypeScript, and Vite.
 This project focuses on clean UI design, smooth animations, form validation, and responsive layout without relying on heavy UI libraries.
 ----------------------------------------------------------------
-# Live Demo: https://your-netlify-link.netlify.app
+# Live Demo: https://contactadmindashboardpage.netlify.app/
 
-# GitHub Repository: https://github.com/yourusername/your-repo-name
+# GitHub Repository: https://github.com/Mohan507/radcubtask.git
 ------------------------------------------------------------------
 # Tech Stack
 
 React
+
 
 TypeScript
 
